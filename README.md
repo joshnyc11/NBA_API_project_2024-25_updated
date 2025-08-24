@@ -2,8 +2,8 @@
 # NBA Data Rest API 
 
 //will edit this on 8/25
-
-A Rest API that returns statistics for NBA players and franchises. End of Season awards and All Star Teams included. Dated from 1947-48 Season through 2023-24 season. 
+//need to update end of season teams for 2024 season or awards.. either one
+A Rest API that returns statistics for NBA players and franchises. End of Season awards and All Star Teams included. Dated from 1947-48 Season through 2024-25 season. 
 ## Installation
 
 What you need: 
