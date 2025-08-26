@@ -113,6 +113,33 @@ Steps:
 | :-------- | :------- | :-------------------------------- |
 | `  None   | `N/A    | Returns MVP winners through NBA history. 
 
+#### Get MVP winners.  
+```http
+  GET /api/awards/mvp
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `  None   | `N/A    | Returns MVP winners through NBA history.
+
+#### Get MVP winners.  
+```http
+  GET /api/awards/mvp
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `  None   | `N/A    | Returns MVP winners through NBA history.
+
+#### Get MVP winners.  
+```http
+  GET /api/awards/mvp
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `  None   | `N/A    | Returns MVP winners through NBA history.
+
 
 #### Get All-NBA Teams
 ```http
