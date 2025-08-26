@@ -25,7 +25,7 @@ Steps:
 
 4. Open in IntelliJ and select SDK Java 17 or higher.
 
-5. Run the NBAjnProjectApplication class.
+5. Run the NBAApiProjectApplication class.
 
    
 ## API Reference
@@ -38,7 +38,7 @@ Steps:
 
 | Parameter | Type     |Description                |
 | :-------- | :------- | :------------------------- |
-| `None` | `N/A` | Returns per game career statistics of former and active NBA players from 1947-48 through 2023-24. 
+| `None` | `N/A` | Returns per game career statistics of former and active NBA players from 1947-48 through 2024-25. 
 
 #### Get all teams 
 
@@ -57,7 +57,7 @@ Steps:
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `  None   | `N/A`    | Returns all conference champions. 
+| `  None   | `N/A`    | Returns all conference champions as of the 2025 Finals. 
 
 #### Get all NBA Champions
 ```http
@@ -66,7 +66,7 @@ Steps:
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `  None   | `N/A`    | Returns all NBA champions as of the 2024 Finals.
+| `  None   | `N/A`    | Returns all NBA champions as of the 2025 Finals.
 
 #### Get information about a single team.
 ```http
@@ -95,6 +95,17 @@ Steps:
 | :-------- | :------- | :-------------------------------- |
 | `  decade   | `Integer   | Returns All-Stars by decade. Ex. 1950s,1960s,1970s,etc.
 
+
+#### Get all awards for a given player using their BasketballReference.com id. Go to BasketballReference.com to see player IDs. ex: nijokic01 for Nikola Jokic
+```http
+  GET /api/awards/player/{playerID}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `  None   | `N/A    | Returns all end of season awards selections from 1947-48 through the 2024-25 season.
+
+
 #### Get all Season Award winners  such as MVP, Defensive Player of the Year, All-NBA, etc.
 ```http
   GET /api/awards
@@ -102,7 +113,7 @@ Steps:
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `  None   | `N/A    | Returns all end of season awards selections from 1947-48 through the 2024-25 season
+| `  None   | `N/A    | Returns all end of season awards selections from 1947-48 through the 2024-25 season.
 
 #### Get MVP winners.  
 ```http
@@ -113,32 +124,41 @@ Steps:
 | :-------- | :------- | :-------------------------------- |
 | `  None   | `N/A    | Returns MVP winners through NBA history. 
 
-#### Get MVP winners.  
+#### Get DPOY winners.  
 ```http
-  GET /api/awards/mvp
+  GET /api/awards/dpoy
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `  None   | `N/A    | Returns MVP winners through NBA history.
+| `  None   | `N/A    | Returns Defensive Player of the Year winners through NBA history.
 
-#### Get MVP winners.  
+#### Get MIP winners.  
 ```http
-  GET /api/awards/mvp
+  GET /api/awards/mip
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `  None   | `N/A    | Returns MVP winners through NBA history.
+| `  None   | `N/A    | Returns Most Improved Player winners through NBA history.
 
-#### Get MVP winners.  
+#### Get CPOTY winners.  
 ```http
-  GET /api/awards/mvp
+  GET /api/awards/cpoty
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `  None   | `N/A    | Returns MVP winners through NBA history.
+| `  None   | `N/A    | Returns Clutch Player of the Year winners through NBA history. This is a recent award, established in the 2023-24 season.
+
+#### Get 6MOTY winners.  
+```http
+  GET /api/awards/sixth-man
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `  None   | `N/A    | Returns Sixth Man of the Year winners through NBA history. 
 
 
 #### Get All-NBA Teams
