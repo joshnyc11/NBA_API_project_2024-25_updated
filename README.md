@@ -26,6 +26,7 @@ Steps:
 4. Open in IntelliJ and select SDK Java 17 or higher.
 
 5. Run the NBAjnProjectApplication class.
+
    
 ## API Reference
 
@@ -83,7 +84,7 @@ Steps:
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `  None   | `N/A    | Returns all All-Star selections from beginning through 2023-24 season.
+| `  None   | `N/A    | Returns all All-Star selections from beginning through 2024-25 season.
 
 #### Get All-Stars by decade. Ex. 1980s,1990s,2010s.
 ```http
@@ -96,12 +97,22 @@ Steps:
 
 #### Get all Season Award winners  such as MVP, Defensive Player of the Year, All-NBA, etc.
 ```http
-  GET /api/season-awards
+  GET /api/awards
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `  None   | `N/A    | Returns all end of season awards selections from 1947-48 through the 2023-24 season.
+| `  None   | `N/A    | Returns all end of season awards selections from 1947-48 through the 2024-25 season
+
+#### Get MVP winners.  
+```http
+  GET /api/awards/mvp
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `  None   | `N/A    | Returns MVP winners through NBA history. 
+
 
 #### Get All-NBA Teams
 ```http
@@ -110,7 +121,7 @@ Steps:
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `  None   | `N/A    | Returns All-NBA (1st,2nd,3rd) Team selections from 1947-48 through the 2023-24 season.
+| `  None   | `N/A    | Returns All-NBA (1st,2nd,3rd) Team selections from 1947-48 through the 2024-25 season.
 
 #### Get All-NBA First Teams
 ```http
