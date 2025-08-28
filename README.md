@@ -27,7 +27,7 @@ Steps:
 
 5. Run the NBAApiProjectApplication class.
 
-   
+```` 
 ## API Reference
 
 #### Get all player statistics 
